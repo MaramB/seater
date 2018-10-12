@@ -3,12 +3,12 @@ $navbar-default-bg: transparent;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+html, body { height: 100%; }
 body {
-  background-image: image-url("background.png");
+  background-image: image-url("back.png");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: center top;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -54,9 +54,19 @@ body {
   position: relative;
   top:0px;
   left:0px;
-  width: 100%;
-  height: auto;
+  width: 110%;
+  height: 100%;
   z-index: -1;
+  }
+
+  .seater {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 10%;
+
   }
 
 .phone {
@@ -69,16 +79,19 @@ body {
 }
 
 .appicon {
-  //position: absolute;
-  display: inline-block;
+  //display: inline-block;
   width: 5%;
-  height: 10%;
+  height: 5%;
   float: left;
-  margin-top: 1.5%;
-  margin-left: 5em;
+  margin: auto;
+  margin-top: -80px;
+  position: absolute;
+  top: 50%;
+  //margin-top: 1.5%;
+  left: 3%;
   //left: 20%;
   //margin-bottom: 20px;
-  left: 0px;
+  //left: 0px;
   
 }
 .text-img {
@@ -126,24 +139,30 @@ p{
 }
 
 .jumbotron {
+    background-image: image-url("all.png");
     background: linear-gradient(to right, #0071F3, #0064D6 , #024594); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 220px;
+
 }
 
 .container {
-    position: relative;
+    //position: relative;
 }
 
 .style-text {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color:  #0183EF;
+    //display: inline-block;
+    margin: auto;
+    margin-top: -100px;
     position: absolute;
+    top: 50%;
+    left: 10%;
     text-align: left;
-    vertical-align: middle;
-    margin-left: 12em;
+    //vertical-align: middle;
     //letter-spacing: -1px;
     a {
   color: black;
