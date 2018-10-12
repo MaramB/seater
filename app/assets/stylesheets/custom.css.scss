@@ -7,7 +7,11 @@ $navbar-default-bg: transparent;
 body {
   background-image: image-url("background.png");
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100%;
+  background-position: center top;
+  background-size: 100% 100%;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 .navbar-default .navbar-brand {
   color: #3397D3;
@@ -42,8 +46,11 @@ body {
 .logo {
   float: center;
   position: relative;
-  height: 100%;
+  top:0px;
+  left:0px;
   width: 100%;
+  height: auto;
+  z-index: -1;
   }
 
 .phone {
@@ -51,25 +58,29 @@ body {
   position: relative;
   width: 12%;
   height: 12%;
-  margin-right: 150px;
-  margin-top: 0px;
+  top: 0%;
+  right: 10%;
 }
 
 .appicon {
-  position: relative;
+  //position: absolute;
   width: 5%;
   height: 10%;
-  right: 340px;
-  top: 90px;
+  float: left;
+  top: 0px;
+  left: 0px;
+  
 }
 .img-text {
   position: relative;
   bottom: 70px;
+
 }
 h4 {
   position: relative;
-  bottom: 85px;
-  right: 250px;
+  //top: 22%;
+  //left: 20%;
+  vertical-align: top;
   color: white;
   font-size: 20px;
   opacity: 0.8;
@@ -112,12 +123,17 @@ p{
     height: 220px;
 }
 
+.container {
+    position: relative;
+}
+
 .style-text {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color:  #0183EF;
+    position: absolute;
     text-align: left;
-    margin-left: 250px;
-    padding: 100px px;
+    margin-left: 5em;
+    margin-bottom: 5em;
     //letter-spacing: -1px;
     a {
   color: black;
