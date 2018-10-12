@@ -8,9 +8,9 @@ body {
   background-image: image-url("background.png");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: center top;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow-x: hidden;
 }
 .navbar-default .navbar-brand {
@@ -18,14 +18,20 @@ body {
 }
 .navbar-default .navbar-nav > li > a {
   color: #fff;
+  
 }
 
 .navbar {
     background-color: transparent;
-    width: 1100px;
+    width: auto !important;
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    float: right;
 }
 .nav navbar-nav navbar-right > li {
     color: white;
+    //padding-top: 10px;
     }
 
 .stitched {
@@ -64,16 +70,20 @@ body {
 
 .appicon {
   //position: absolute;
+  display: inline-block;
   width: 5%;
   height: 10%;
   float: left;
-  top: 0px;
+  margin-top: 1.5%;
+  margin-left: 5em;
+  //left: 20%;
+  //margin-bottom: 20px;
   left: 0px;
   
 }
-.img-text {
-  position: relative;
-  bottom: 70px;
+.text-img {
+  display: inline-block;
+  float: left;
 
 }
 h4 {
@@ -132,8 +142,8 @@ p{
     color:  #0183EF;
     position: absolute;
     text-align: left;
-    margin-left: 5em;
-    margin-bottom: 5em;
+    vertical-align: middle;
+    margin-left: 12em;
     //letter-spacing: -1px;
     a {
   color: black;
@@ -158,7 +168,10 @@ p{
 
 // Styling for the footer
 footer {
-    padding: 10px;
+    //padding: 10px;
+    position: absolute;
+    left: 30%;
+     min-height:0%;
     margin-bottom: 10px;
     align: center;
     text-align: center;
