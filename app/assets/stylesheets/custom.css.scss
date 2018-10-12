@@ -4,8 +4,9 @@ $navbar-default-bg: transparent;
 @import "bootstrap";
 
 html, body { height: 100%; }
+
 body {
-  background-image: image-url("back.png");
+  background-image: image-url("back2.png");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: center top;
   background-size: 100% 100%;
@@ -15,10 +16,11 @@ body {
 }
 .navbar-default .navbar-brand {
   color: #3397D3;
+  display: block;
 }
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  
+  display: block;
 }
 
 .navbar {
@@ -27,12 +29,25 @@ body {
     position: absolute;
     top: 0;
     margin-top: 20px;
-    float: right;
+    align: right;
+    margin-bottom: 0;
+    display: block;
+    
 }
 .nav navbar-nav navbar-right > li {
-    color: white;
+    color: white !important;
     //padding-top: 10px;
+    display: block;
     }
+
+
+    .collapse .navbar-collapse {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
 
 .stitched {
    padding: 20px;
@@ -71,17 +86,18 @@ body {
 
 .phone {
   float: right;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  margin-top: -80px;
   width: 12%;
-  height: 12%;
-  top: 0%;
+  height: auto;
   right: 10%;
 }
 
 .appicon {
   //display: inline-block;
   width: 5%;
-  height: 5%;
+  height: auto;
   float: left;
   margin: auto;
   margin-top: -80px;
@@ -100,9 +116,9 @@ body {
 
 }
 h4 {
-  position: relative;
-  //top: 22%;
-  //left: 20%;
+  position: absolute;
+  top: 17%;
+  left: 20%;
   vertical-align: top;
   color: white;
   font-size: 20px;
