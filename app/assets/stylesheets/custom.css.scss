@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 .navbar-default .navbar-brand {
-  color: #3397D3;
+  //color: #3397D3;
   display: block;
 }
 .navbar-default .navbar-nav > li > a {
@@ -27,7 +27,8 @@ body {
     background-color: transparent;
     width: auto !important;
     position: absolute;
-    top: 0;
+    top: 2%;
+    right: 2%;
     //margin-top: 20px;
     align: right;
     margin-bottom: 0;
@@ -38,20 +39,26 @@ body {
     color: white !important;
     //padding-top: 10px;
     display: block;
+    font-size: 50px;
     }
 
 
-    .collapse .navbar-collapse {
+.collapse .navbar-collapse {
   display: block;
-  width: 22px;
-  height: 2px;
-  background-color: #cccccc;
-  border-radius: 1px;
+  //width: 22px;
+  //height: 2px;
+  float: right;
+  //text-align: right;
+  //background-color: #cccccc;
+  //border-radius: 1px;
+}
+.navbar-toggler-right {
+  float:right !important;
 }
 
 .stitched {
    padding: 20px;
-   margin-bottom: 200px;
+   //margin-bottom: 200px;
    height: 175px;
    width: 98%;
    position: relative;
@@ -67,15 +74,7 @@ body {
    text-shadow: -1px -1px #aa3030;
    font-weight: normal;
 }
-  @media (max-width:1000px) { 
-    .stitched {
-    position: relative; 
-    height: 70px;
-    width: 98%;
-    bottom: 40%;
-    left: 1%;
-    }
-  }
+ 
 
 .logo {
   float: center;
@@ -87,18 +86,17 @@ body {
   z-index: 1;
   }
 
-  .seater {
-    float: left;
-    margin: auto;
-    margin-top: -350px;
-    position: relative;
-    //top: 10%;
-    bottom: 50%;
-    left: 5%;
-    width: 10%;
-    height: auto;
-    
-
+.seater {
+  float: left;
+  //margin: auto;
+  //margin-top: -30%;
+  position:relative;
+  top:0%;
+  //display: inline-block;
+  //bottom: 50%;
+  left: 5%;
+  width: 10%;
+  height: auto;
   }
 
 .phone {
@@ -134,34 +132,20 @@ body {
 }
 h4 {
 
-    //margin: auto;
-    margin-top: 15px;
-    bottom: 280%;
-    left: 15%;
-    text-align: left;
+  //margin: auto;
+  //margin-top: 15px;
+  //bottom: 280%;
+  left: 5%;
+  text-align: left;
   position: relative;
   margin: auto;
-  //margin-top: -250px;
-  //top: 23%;
-  //left: 15%;
-  //vertical-align: top;
+  top: 80%;
   //display: inline-block;
   color: white;
-  font-size: 20px;
+  //font-size: 50px;
   opacity: 0.8;
 }
-  @media (max-width:980px) { 
-    h4 {
-    bottom: 590%;
-    text-align: left;
-  position: relative;
-    }
-
-    .seater {
-    position: relative;
-    top: 200%;
-    }
-  }
+ 
 
 hr { 
     display: block;
@@ -203,10 +187,40 @@ p{
     height: 200px;
 }
 
-  @media (max-width:980px) { 
+  @media (max-width:1024px) { 
     .jumbotron {
-    height: 100px;
+    height: 120px;
     }
+
+    .stitched {
+    position: relative; 
+    height: 100px;
+    width: 98%;
+    //top: 0;
+    bottom: 30%;
+    left: 1%;
+    }
+    .seater {
+    position: absolute;
+    top: 0%;
+    //margin-bottom: 50px;
+    //bottom: 80%;
+    display: inline-block;
+    }
+    h4 {
+    display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 13px;
+    }
+    .style-text {
+    h3{font-size: 15px;}
+    a{font-size: 15px;}
+    }
+  .navbar-default .navbar-nav > li > a {
+  color: black;
+  }
   }
 
 .container {
@@ -227,7 +241,6 @@ p{
     //letter-spacing: -1px;
     a {
   color: black;
-  font-size: 20px;
   text-decoration: none;
   } 
 }

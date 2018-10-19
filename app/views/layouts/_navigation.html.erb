@@ -9,12 +9,15 @@
       </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
+    	<div class="navbar-toggler-right" >
 	   <ul class="nav navbar-nav navbar-right">
-		    <li><%= link_to "How to", root_path(:anchor => "how-to"), class: "navbar-brand", style: "font-size:1.5vw;" %></li>
-		    <li><%= link_to "Download", root_path(:anchor => "download"), class: "navbar-brand", style: "font-size:1.5vw;" %></li>
-		    <li><%= link_to "About", root_path(:anchor => "about"), class: "navbar-brand", style: "font-size:1.5vw;" %></li>
-		    <li><%= link_to "Contact Us", root_path(:anchor => "contact-us"), class: "navbar-brand", style: "font-size:1.5vw;" %></li>
+		    <li><%= link_to "How to", class: "navbar-brand" %></li>
+		    <li><%= link_to "Download", class: "navbar-brand" %></li>
+		    <li><%= link_to "About", class: "navbar-brand" %></li>
+		    <li><%= link_to "Contact Us", class: "navbar-brand"%></li>
+		    
 	  	</ul>
+	  </div>
 
 	</div>
 </div>
