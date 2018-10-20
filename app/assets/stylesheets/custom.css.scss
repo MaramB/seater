@@ -3,7 +3,7 @@ $navbar-default-bg: transparent;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-html, body { height: 115%; }
+html, body { height: 170%; }
 
 body {
   background-image: image-url("Back@2x.png");
@@ -14,6 +14,18 @@ body {
   height: auto;
   overflow-x: hidden;
 }
+table {
+    border-collapse: collapse;
+    position:relative;
+    left: 5%;
+    //border: 1px solid black;
+    td {color: black;}
+    th {color: black;}
+}
+.style-background {background-color: white;
+footer {display:none;}
+}
+
 .navbar-default .navbar-brand {
   //color: #3397D3;
   display: block;
@@ -250,9 +262,10 @@ p{
     height: auto;
     display: inline-block;
     //margin: auto;
-    margin-top: 15px;
+    //margin-top: 15px;
     position: relative;
-    top: 70%;
+    //top: 70%;
+    bottom: 10%;
     left: 15%;
     text-align: left;
 }
@@ -262,9 +275,9 @@ p{
     height: auto;
     display: inline-block;
     //margin: auto;
-    margin-top: 15px;
+    //margin-top: 10px;
     position: relative;
-    top: 70%;
+    //top: 10%;
     left: 15%;
     text-align: left;
 }
@@ -289,7 +302,7 @@ p{
 
 // Styling for the footer
 footer {
-   position: absolute;
+   position: relative;
    left: 0;
    bottom: 0;
    right: 0;
